@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using lab04.Data;
 using lab04.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace lab04.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("HealthPolicy"]
     [ApiController]
     public class CitiesAPIController : ControllerBase
     {
