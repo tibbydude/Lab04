@@ -62,6 +62,8 @@ namespace lab04
             app.UseStaticFiles();
 
             app.UseRouting();
+            
+            app.UseCors();
 
             app.UseAuthentication();
             app.UseAuthorization();
