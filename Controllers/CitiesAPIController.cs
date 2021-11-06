@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Cors;
 namespace lab04.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("HealthPolicy"]
+    [EnableCors("HealthPolicy")]
     [ApiController]
     public class CitiesAPIController : ControllerBase
     {
